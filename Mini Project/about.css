@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -67,7 +69,9 @@ body {
     font-size: 28px;
     top: 30%;
     opacity: 0;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     justify-content: center;
     position: relative;
     text-align: center;
@@ -89,12 +93,11 @@ body {
 }
 
 .content {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 60px 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    margin-left: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    gap: 150px;
     align-items: center;
 }
 
@@ -113,6 +116,7 @@ body {
     border-radius: 22px;
     padding: 40px;
     line-height: 1.8;
+    width: 800px;
     /* border: 1px solid rgba(180, 140, 255, 0.35); */
     /* background-size: 00% 300%;
     background-position: left center; */
@@ -120,7 +124,7 @@ body {
 }
 
 .content .paragraph:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.01); */
     background-position: right center;
     box-shadow:
         0 28px 60px rgba(0, 0, 0, 0.85),
@@ -137,7 +141,8 @@ body {
     margin-top: 24px;
     width: 100%;
     max-width: 350px;
-    height: 45px;
+    height: 40px;
+    display: flex;
 }
 
 .content audio::-webkit-media-controls-panel {
@@ -152,8 +157,7 @@ body {
 }
 
 .content .image img {
-    width: 100%;
-    max-width: 600px;
+    width: 700px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -189,6 +193,7 @@ body {
 .footer h4 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #ff7171;
 }
 
 .footer p {
@@ -214,7 +219,7 @@ body {
 
 .footer .icons a:hover {
     color: orange;
-    transform: translateY(-5px);
+    transform: scale(1.5);
 }
 
 .footer .credit {
